@@ -467,6 +467,7 @@ html.contrast .partner-card, html.contrast .logo-row a, html.contrast .team-card
   height: 4.6rem;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 28%;
   background: #e7edf3;
   color: var(--heading);
   display: grid;

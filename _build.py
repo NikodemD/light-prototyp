@@ -963,6 +963,72 @@ def team_members():
             "initials": "JM",
             "url": "https://pg.edu.pl/p/justyna-martyniuk-peczek-19369",
         },
+        {
+            "pl_name": "dr Dubon Rodrigue",
+            "en_name": "Dr Dubon Rodrigue",
+            "pl_org": "Idiap Research Institute",
+            "en_org": "Idiap Research Institute",
+            "pl_role": "Badacz po doktoracie",
+            "en_role": "Postdoctoral researcher",
+            "photo": "img/team/dubon-rodrigue.jpg",
+            "initials": "DR",
+            "url": "https://www.idiap.ch/en/people/dubon-rodrigue-2064",
+        },
+        {
+            "pl_name": "prof. Marie-Claude Dubois",
+            "en_name": "Prof. Marie-Claude Dubois",
+            "pl_org": "Uniwersytet w Lund",
+            "en_org": "Lund University",
+            "pl_role": "Kierowniczka zespołu w Lund",
+            "en_role": "Lund team lead",
+            "photo": "img/team/marie-claude-dubois.jpg",
+            "initials": "MD",
+            "url": "https://portal.research.lu.se/en/persons/marie-claude-dubois/",
+        },
+        {
+            "pl_name": "Jérôme Kämpf",
+            "en_name": "Jérôme Kämpf",
+            "pl_org": "Idiap Research Institute",
+            "en_org": "Idiap Research Institute",
+            "pl_role": "Starszy pracownik naukowy",
+            "en_role": "Senior research scientist",
+            "photo": "img/team/jerome-kampf.jpg",
+            "initials": "JK",
+            "url": "https://www.idiap.ch/~jkaempf/",
+        },
+        {
+            "pl_name": "dr Olga Martyniuk",
+            "en_name": "Dr Olga Martyniuk",
+            "pl_org": "Uniwersytet Gdański",
+            "en_org": "University of Gdańsk",
+            "pl_role": "Adiunkt",
+            "en_role": "Assistant professor",
+            "photo": "img/team/olga-martyniuk.jpg",
+            "initials": "OM",
+            "url": "https://repozytorium.bg.ug.edu.pl/info/author/UOG445c047d26c8486ba9cb9ef938330fe3/",
+        },
+        {
+            "pl_name": "dr inż. Natalia Sokół",
+            "en_name": "Natalia Sokół, PhD, Eng.",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "Adiunkt",
+            "en_role": "Assistant professor",
+            "photo": "img/team/natalia-sokol.jpg",
+            "initials": "NS",
+            "url": "https://pg.edu.pl/p/natalia-sokol-944955",
+        },
+        {
+            "pl_name": "dr hab. inż. Maciej Tankiewicz, prof. uczelni",
+            "en_name": "Maciej Tankiewicz, PhD, DSc, Eng.",
+            "pl_org": "Gdański Uniwersytet Medyczny",
+            "en_org": "Medical University of Gdańsk",
+            "pl_role": "Kierownik zespołu GUMed",
+            "en_role": "GUMed team lead",
+            "photo": "img/team/maciej-tankiewicz.jpg",
+            "initials": "MT",
+            "url": "https://informator.gumed.edu.pl/259",
+        },
     ]
 
 
@@ -989,10 +1055,10 @@ def team_body(pl):
         )
     if pl:
         intro = "Każda osoba ma zdjęcie, rolę w projekcie i instytucję."
-        note = "Zdjęcia portretowe i kolejne osoby dopiszemy, gdy je prześlesz. Na razie jest koordynatorka."
+        note = "Lista może się jeszcze powiększyć. Kolejne osoby dopiszemy razem ze zdjęciem, rolą i instytucją."
     else:
         intro = "Each person has a photo, a role in the project and an organisation."
-        note = "Portrait photos and further people will be added when you send them. For now the coordinator is listed."
+        note = "The list can still grow. Further people will be added with a photo, a role and an organisation."
     return f'<p>{intro}</p><ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
 
 
@@ -1472,7 +1538,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek koordynatorka Politechnika Gdańska", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1491,7 +1557,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek coordinator Gdańsk University of Technology", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
