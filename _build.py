@@ -954,7 +954,7 @@ def team_members():
     return [
         {
             "pl_name": "prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek",
-            "en_name": "Prof. Justyna Martyniuk-Pęczek, PhD, DSc, Eng., Arch.",
+            "en_name": "Prof. Justyna Martyniuk-Pęczek",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
             "pl_role": "Koordynatorka projektu",
@@ -965,7 +965,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. Dubon Rodrigue",
-            "en_name": "Dubon Rodrigue, PhD, Eng.",
+            "en_name": "Dr. Dubon Rodrigue",
             "pl_org": "Idiap Research Institute",
             "en_org": "Idiap Research Institute",
             "pl_role": "Badacz po doktoracie",
@@ -976,7 +976,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. Marie-Claude Dubois",
-            "en_name": "Marie-Claude Dubois, PhD, Eng.",
+            "en_name": "Prof. Marie-Claude Dubois",
             "pl_org": "Uniwersytet w Lund",
             "en_org": "Lund University",
             "pl_role": "Associate professor",
@@ -987,7 +987,7 @@ def team_members():
         },
         {
             "pl_name": "prof. dr inż. Jérôme Kämpf",
-            "en_name": "Prof. Jérôme Kämpf, PhD, Eng.",
+            "en_name": "Prof. Jérôme Kämpf",
             "pl_org": "Idiap Research Institute",
             "en_org": "Idiap Research Institute",
             "pl_role": "Starszy pracownik naukowy",
@@ -998,7 +998,7 @@ def team_members():
         },
         {
             "pl_name": "dr Olga Martyniuk",
-            "en_name": "Dr Olga Martyniuk",
+            "en_name": "Dr. Olga Martyniuk",
             "pl_org": "Uniwersytet Gdański",
             "en_org": "University of Gdańsk",
             "pl_role": "Adiunkt",
@@ -1009,7 +1009,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. Natalia Sokół",
-            "en_name": "Natalia Sokół, PhD, Eng.",
+            "en_name": "Dr. Natalia Sokół",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
             "pl_role": "Adiunkt",
@@ -1020,7 +1020,7 @@ def team_members():
         },
         {
             "pl_name": "dr hab. inż. Maciej Tankiewicz, prof. uczelni",
-            "en_name": "Maciej Tankiewicz, PhD, DSc, Eng.",
+            "en_name": "Prof. Maciej Tankiewicz",
             "pl_org": "Gdański Uniwersytet Medyczny",
             "en_org": "Medical University of Gdańsk",
             "pl_role": "Kierownik zespołu GUMed",
@@ -1042,7 +1042,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. David Geisler-Moroder",
-            "en_name": "David Geisler-Moroder, PhD, Eng.",
+            "en_name": "Dr. David Geisler-Moroder",
             "pl_org": "Uniwersytet w Innsbrucku",
             "en_org": "Universität Innsbruck",
             "pl_role": "Pracownik naukowy",
@@ -1053,7 +1053,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. Nikodem Derengowski",
-            "en_name": "Nikodem Derengowski, PhD, Eng.",
+            "en_name": "Dr. Nikodem Derengowski",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
             "pl_role": "Pracownik naukowy",
@@ -1064,7 +1064,7 @@ def team_members():
         },
         {
             "pl_name": "dr inż. arch. Roman Ruczyński",
-            "en_name": "Roman Ruczyński, PhD, Eng., Arch.",
+            "en_name": "Dr. Roman Ruczyński",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
             "pl_role": "",
