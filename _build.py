@@ -1073,12 +1073,91 @@ def team_members():
             "initials": "RR",
             "url": "https://pg.edu.pl/p/roman-ruczynski-8644",
         },
+        {
+            "pl_name": "dr hab. inż. arch. Izabela Mironowicz, prof. uczelni",
+            "en_name": "Prof. Izabela Mironowicz",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "IM",
+            "url": "https://pg.edu.pl/p/izabela-mironowicz-880097",
+        },
+        {
+            "pl_name": "mgr inż. Anna Zackiewicz",
+            "en_name": "Anna Zackiewicz",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "AZ",
+            "url": "https://pg.edu.pl/p/anna-zackiewicz-1298558",
+        },
+        {
+            "pl_name": "dr inż. Niko Gentile",
+            "en_name": "Dr. Niko Gentile",
+            "pl_org": "Uniwersytet w Lund",
+            "en_org": "Lund University",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "NG",
+            "url": "https://portal.research.lu.se/en/persons/niko-gentile/",
+        },
+        {
+            "pl_name": "Natalia Lekner",
+            "en_name": "Natalia Lekner",
+            "pl_org": "Gmina Kartuzy",
+            "en_org": "Municipality of Kartuzy",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "NL",
+            "url": "https://kartuzy.pl/",
+        },
+        {
+            "pl_name": "dr hab. Anna Wojewnik-Filipkowska, prof. UG",
+            "en_name": "Prof. Anna Wojewnik-Filipkowska",
+            "pl_org": "Uniwersytet Gdański",
+            "en_org": "University of Gdańsk",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "AW",
+            "url": "https://sd.ug.edu.pl/node/791",
+        },
+        {
+            "pl_name": "Ewa Patyk",
+            "en_name": "Ewa Patyk",
+            "pl_org": "Gdańska Fundacja Innowacji Społecznych",
+            "en_org": "Gdańsk Foundation for Social Innovation",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "EP",
+            "url": "https://gfis.pl/",
+        },
     ]
+
+
+def team_rank(person):
+    en = person["en_name"]
+    if en.startswith("Prof."):
+        rank = 0
+    elif en.startswith("Dr."):
+        rank = 1
+    else:
+        rank = 2
+    plain = en.removeprefix("Prof. ").removeprefix("Dr. ")
+    surname = plain.split()[-1].casefold()
+    return (rank, surname, plain.casefold())
 
 
 def team_body(pl):
     items = []
-    for person in team_members():
+    for person in sorted(team_members(), key=team_rank):
         name = person["pl_name"] if pl else person["en_name"]
         org = person["pl_org"] if pl else person["en_org"]
         photo = person.get("photo") or ""
@@ -1578,7 +1657,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1597,7 +1676,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
