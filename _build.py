@@ -1060,7 +1060,7 @@ def team_members():
             "en_role": "Researcher",
             "photo": "img/team/nikodem-derengowski.jpg",
             "initials": "ND",
-            "url": "https://pg.edu.pl/p/nikodem-derengowski-1658312",
+            "url": "https://orcid.org/0009-0001-9071-8010",
         },
     ]
 
