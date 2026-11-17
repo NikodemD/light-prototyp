@@ -952,33 +952,47 @@ def partners_body(pl):
 
 def team_members():
     return [
-        (
-            "prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek",
-            "Prof. Justyna Martyniuk-Pęczek, PhD, DSc, Eng., Arch.",
-            "Politechnika Gdańska",
-            "Gdańsk University of Technology",
-            "Koordynatorka projektu.",
-            "Project coordinator.",
-        ),
+        {
+            "pl_name": "prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek",
+            "en_name": "Prof. Justyna Martyniuk-Pęczek, PhD, DSc, Eng., Arch.",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "Koordynatorka projektu",
+            "en_role": "Project coordinator",
+            "photo": "",
+            "initials": "JM",
+            "url": "https://pg.edu.pl/p/justyna-martyniuk-peczek-19369",
+        },
     ]
 
 
 def team_body(pl):
     items = []
-    for pl_name, en_name, pl_org, en_org, pl_role, en_role in team_members():
-        name = pl_name if pl else en_name
-        org = pl_org if pl else en_org
-        role = pl_role if pl else en_role
+    for person in team_members():
+        name = person["pl_name"] if pl else person["en_name"]
+        org = person["pl_org"] if pl else person["en_org"]
+        role = person["pl_role"] if pl else person["en_role"]
+        photo = person.get("photo") or ""
+        if photo:
+            face = f'<img class="avatar" src="{asset(photo, 0 if pl else 1)}" alt="">'
+        else:
+            face = f'<span class="avatar" aria-hidden="true">{person["initials"]}</span>'
+        title = name
+        url = person.get("url") or ""
+        if url:
+            title = f'<a href="{url}">{name}</a>'
         items.append(
-            f'<li class="team-card"><h2>{name}</h2>'
-            f'<p class="org">{org}</p><p>{role}</p></li>'
+            f'<li class="team-card">{face}<div>'
+            f'<h2>{title}</h2>'
+            f'<p class="role">{role}</p>'
+            f'<p class="org">{org}</p></div></li>'
         )
     if pl:
-        intro = "Każda osoba jest opisana rolą w projekcie i instytucją, z której przychodzi."
-        note = "Lista nie jest jeszcze kompletna. Kolejne osoby dopiszemy razem z profilem i organizacją."
+        intro = "Każda osoba ma zdjęcie, rolę w projekcie i instytucję."
+        note = "Zdjęcia portretowe i kolejne osoby dopiszemy, gdy je prześlesz. Na razie jest koordynatorka."
     else:
-        intro = "Each person is listed with a role in the project and the organisation they come from."
-        note = "The list is not complete yet. Further people will be added with a profile and an organisation."
+        intro = "Each person has a photo, a role in the project and an organisation."
+        note = "Portrait photos and further people will be added when you send them. For now the coordinator is listed."
     return f'<p>{intro}</p><ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
 
 
