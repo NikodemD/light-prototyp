@@ -1124,7 +1124,7 @@ def team_members():
             "en_org": "University of Gdańsk",
             "pl_role": "",
             "en_role": "",
-            "photo": "img/team/anna-wojewnik-filipkowska.jpg",
+            "photo": "",
             "initials": "AW",
             "url": "https://sd.ug.edu.pl/node/791",
         },
@@ -1138,6 +1138,17 @@ def team_members():
             "photo": "",
             "initials": "EP",
             "url": "https://gfis.pl/",
+        },
+        {
+            "pl_name": "dr inż. Aleksandra Koszarek-Cyra",
+            "en_name": "Dr. Aleksandra Koszarek-Cyra",
+            "pl_org": "Uniwersytet Gdański",
+            "en_org": "University of Gdańsk",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "img/team/aleksandra-koszarek-cyra.jpg",
+            "initials": "AK",
+            "url": "https://old.wzr.ug.edu.pl/wydzial/index.php?prac=845&str=121",
         },
     ]
 
@@ -1657,7 +1668,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1676,7 +1687,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
