@@ -1124,7 +1124,7 @@ def team_members():
             "en_org": "University of Gdańsk",
             "pl_role": "",
             "en_role": "",
-            "photo": "",
+            "photo": "img/team/anna-wojewnik-filipkowska.jpg",
             "initials": "AW",
             "url": "https://sd.ug.edu.pl/node/791",
         },
