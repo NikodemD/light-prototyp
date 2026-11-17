@@ -1097,8 +1097,8 @@ def team_members():
             "url": "https://pg.edu.pl/p/anna-zackiewicz-1298558",
         },
         {
-            "pl_name": "dr inż. Niko Gentile",
-            "en_name": "Dr. Niko Gentile",
+            "pl_name": "prof. dr inż. Niko Gentile",
+            "en_name": "Prof. Niko Gentile",
             "pl_org": "Uniwersytet w Lund",
             "en_org": "Lund University",
             "pl_role": "",
@@ -1179,10 +1179,9 @@ def team_rank(person):
     # This group stays together, with Nikodem last and Moroder first.
     pin = {
         "David Geisler-Moroder": 0,
-        "Niko Gentile": 1,
-        "Natalia Sokół": 2,
-        "Roman Ruczyński": 3,
-        "Nikodem Derengowski": 4,
+        "Natalia Sokół": 1,
+        "Roman Ruczyński": 2,
+        "Nikodem Derengowski": 3,
     }
     if plain in pin:
         return (rank, 0, pin[plain])
