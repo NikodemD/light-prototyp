@@ -1177,6 +1177,9 @@ def team_rank(person):
         rank = 2
     plain = en.removeprefix("Prof. ").removeprefix("Dr. ")
     surname = plain.split()[-1].casefold()
+    # Nikodem sits after Gentile, Sokół and Ruczyński, at the end of the doctors.
+    if plain == "Nikodem Derengowski":
+        surname = "\uffff"
     return (rank, surname, plain.casefold())
 
 
