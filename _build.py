@@ -51,6 +51,7 @@ def chrome(p):
             "results": "Rezultaty",
             "files": "Do pobrania",
             "partners": "Partnerzy",
+            "team": "Zespół",
             "contact": "Kontakt",
             "k": "Kartuzy",
             "l": "Lund",
@@ -70,6 +71,7 @@ def chrome(p):
             "results": "Results",
             "files": "Downloads",
             "partners": "Partners",
+            "team": "Team",
             "contact": "Contact",
             "k": "Kartuzy",
             "l": "Lund",
@@ -89,6 +91,7 @@ def chrome(p):
         "results": "rezultaty.html" if pl else "en/results.html",
         "files": "do-pobrania.html" if pl else "en/downloads.html",
         "partners": "partnerzy.html" if pl else "en/partners.html",
+        "team": "zespol.html" if pl else "en/team.html",
         "contact": "kontakt.html" if pl else "en/contact.html",
         "search": "szukaj.html" if pl else "en/search.html",
     }
@@ -182,6 +185,7 @@ def chrome(p):
           <li>{a("results")}</li>
           <li>{a("files")}</li>
           <li>{a("partners")}</li>
+          <li>{a("team")}</li>
           <li>{a("contact")}</li>
         </ul>
       </nav>
@@ -946,6 +950,38 @@ def partners_body(pl):
     return partner_cards(pl)
 
 
+def team_members():
+    return [
+        (
+            "prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek",
+            "Prof. Justyna Martyniuk-Pęczek, PhD, DSc, Eng., Arch.",
+            "Politechnika Gdańska",
+            "Gdańsk University of Technology",
+            "Koordynatorka projektu.",
+            "Project coordinator.",
+        ),
+    ]
+
+
+def team_body(pl):
+    items = []
+    for pl_name, en_name, pl_org, en_org, pl_role, en_role in team_members():
+        name = pl_name if pl else en_name
+        org = pl_org if pl else en_org
+        role = pl_role if pl else en_role
+        items.append(
+            f'<li class="team-card"><h2>{name}</h2>'
+            f'<p class="org">{org}</p><p>{role}</p></li>'
+        )
+    if pl:
+        intro = "Każda osoba jest opisana rolą w projekcie i instytucją, z której przychodzi."
+        note = "Lista nie jest jeszcze kompletna. Kolejne osoby dopiszemy razem z profilem i organizacją."
+    else:
+        intro = "Each person is listed with a role in the project and the organisation they come from."
+        note = "The list is not complete yet. Further people will be added with a profile and an organisation."
+    return f'<p>{intro}</p><ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
+
+
 
 def contact_body(pl):
     if pl:
@@ -1216,6 +1252,13 @@ page(id="par-pl", file="partnerzy.html", depth=0, lang="pl", nav="partners",
      crumbs=[("Partnerzy", "")],
      body=partners_body(True))
 
+page(id="team-pl", file="zespol.html", depth=0, lang="pl", nav="team",
+     title="Zespół | LIGHT", h1="Zespół",
+     desc="Osoby w projekcie LIGHT: rola i instytucja.",
+     pl="zespol.html", alt="en/team.html",
+     crumbs=[("Zespół", "")],
+     body=team_body(True))
+
 page(id="con-pl", file="kontakt.html", depth=0, lang="pl", nav="contact",
      title="Kontakt | LIGHT", h1="Kontakt",
      desc="Kontakt do koordynacji projektu LIGHT na Politechnice Gdańskiej.",
@@ -1375,6 +1418,13 @@ page(id="par-en", file="en/partners.html", depth=1, lang="en", nav="partners",
      crumbs=[("Partners", "")],
      body=partners_body(False))
 
+page(id="team-en", file="en/team.html", depth=1, lang="en", nav="team",
+     title="Team | LIGHT", h1="Team",
+     desc="People in the LIGHT project: role and organisation.",
+     pl="zespol.html", alt="en/team.html",
+     crumbs=[("Team", "")],
+     body=team_body(False))
+
 page(id="con-en", file="en/contact.html", depth=1, lang="en", nav="contact",
      title="Contact | LIGHT", h1="Contact",
      desc="Contact the LIGHT coordination at Gdańsk University of Technology.",
@@ -1408,6 +1458,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek koordynatorka Politechnika Gdańska", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1426,6 +1477,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek coordinator Gdańsk University of Technology", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
