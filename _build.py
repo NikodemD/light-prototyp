@@ -957,8 +957,9 @@ def team_members():
             "en_name": "Prof. Justyna Martyniuk-Pęczek",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
-            "pl_role": "Koordynatorka projektu",
-            "en_role": "Project coordinator",
+            "pl_role": "kierownik projektu",
+            "en_role": "Project leader",
+            "lead": True,
             "photo": "img/team/justyna-martyniuk-peczek.jpg",
             "initials": "JM",
             "url": "https://pg.edu.pl/p/justyna-martyniuk-peczek-19369",
@@ -1166,7 +1167,9 @@ def team_members():
 
 def team_rank(person):
     en = person["en_name"]
-    if en.startswith("Prof."):
+    if person.get("lead"):
+        rank = -1
+    elif en.startswith("Prof."):
         rank = 0
     elif en.startswith("Dr."):
         rank = 1
@@ -1182,6 +1185,8 @@ def team_body(pl):
     for person in sorted(team_members(), key=team_rank):
         name = person["pl_name"] if pl else person["en_name"]
         org = person["pl_org"] if pl else person["en_org"]
+        role = (person["pl_role"] if pl else person["en_role"]) if person.get("lead") else ""
+        role_html = f'<p class="role">{role}</p>' if role else ""
         photo = person.get("photo") or ""
         if photo:
             face = f'<img class="avatar" src="{asset(photo, 0 if pl else 1)}" alt="">'
@@ -1194,6 +1199,7 @@ def team_body(pl):
         items.append(
             f'<li class="team-card">{face}<div>'
             f'<h2>{title}</h2>'
+            f'{role_html}'
             f'<p class="org">{org}</p></div></li>'
         )
     if pl:
