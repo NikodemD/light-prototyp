@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do pobrania | LIGHT</title>
+  <meta name="description" content="Biblioteka materiałów projektu LIGHT.">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try {
+      var f = localStorage.getItem("light-font");
+      if (f && f !== "0") document.documentElement.dataset.font = f;
+      if (localStorage.getItem("light-contrast") === "1") document.documentElement.classList.add("contrast");
+    } catch (e) {}
+  </script>
+</head>
+<body data-root="">
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="tools">
+        <nav class="lang" aria-label="Język">
+          <a href="do-pobrania.html" aria-current="true">PL</a>
+          <a href="en/downloads.html" >EN</a>
+        </nav>
+        <span>
+          <button class="tool-btn" type="button" data-font="0" aria-pressed="false">A <span class="sr">normalny</span></button>
+          <button class="tool-btn" type="button" data-font="1" aria-pressed="false">A+</button>
+          <button class="tool-btn" type="button" data-font="2" aria-pressed="false">A++</button>
+        </span>
+        <button class="tool-btn" type="button" data-contrast aria-pressed="false">Zmień kontrast</button>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">
+        <img src="img/light-logo.png?v=3" alt="LIGHT">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Menu główne">
+        <ul>
+          <li><a href="o-projekcie.html">O projekcie</a></li>
+          <li class="has-sub"><a href="laboratoria.html">Laboratoria</a>
+            <ul class="submenu">
+              <li><a href="laboratorium-kartuzy.html">Kartuzy</a></li>
+              <li><a href="laboratorium-lund.html">Lund</a></li>
+              <li><a href="laboratorium-innsbruck.html">Innsbruck</a></li>
+            </ul>
+          </li>
+          <li><a href="aktualnosci.html">Aktualności</a></li>
+          <li><a href="rezultaty.html">Rezultaty</a></li>
+          <li><a href="do-pobrania.html" aria-current="page">Do pobrania</a></li>
+          <li><a href="partnerzy.html">Partnerzy</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <form class="search" action="szukaj.html" method="get" role="search">
+        <label class="sr" for="q-files-pl">Szukaj</label>
+        <input id="q-files-pl" type="search" name="q" placeholder="Czego szukasz?">
+        <button type="submit">Szukaj</button>
+      </form>
+    </div>
+  </header>
+  <nav class="crumbs" aria-label="Ścieżka"><div class="wrap"><ol><li><a href="index.html">LIGHT</a></li><li>Do pobrania</li></ol></div></nav>
+  <div class="wrap page-title"><h1>Do pobrania</h1></div>
+  <div class="wrap layout"><aside class="side"><p>Rezultaty</p><ul><li><a href="rezultaty.html">Rezultaty</a></li><li><a href="do-pobrania.html" aria-current="page">Do pobrania</a></li></ul></aside><article class="prose" id="tresc"><p class="note">Biblioteka jest pusta, bo te pliki powstaną w trakcie projektu. Każdy późniejszy plik dostanie tytuł, datę, język, format, rozmiar i — przy narzędziach oraz publikacjach — licencję.</p>
+<div class="filters" data-filter="#pliki"><button type="button" data-cat="all" aria-pressed="true">Wszystkie</button><button type="button" data-cat="projekt" aria-pressed="false">O projekcie</button><button type="button" data-cat="raporty" aria-pressed="false">Raporty</button><button type="button" data-cat="wytyczne" aria-pressed="false">Wytyczne</button><button type="button" data-cat="narzedzia" aria-pressed="false">Narzędzia</button><button type="button" data-cat="prezentacje" aria-pressed="false">Prezentacje</button><button type="button" data-cat="grafika" aria-pressed="false">Grafika</button></div>
+<div class="table-wrap"><table id="pliki">
+<thead><tr><th>Tytuł</th><th>Kategoria</th><th>Język</th><th>Format</th><th>Status</th></tr></thead>
+<tbody><tr data-cat="projekt"><td>Karta projektu</td><td>O projekcie</td><td>PL / EN</td><td>PDF</td><td class="status">W przygotowaniu</td></tr><tr data-cat="raporty"><td>Raporty badawcze</td><td>Raporty i publikacje</td><td>PL / EN</td><td>PDF</td><td class="status">W przygotowaniu</td></tr><tr data-cat="wytyczne"><td>Wytyczne LIGHT</td><td>Wytyczne</td><td>PL / EN</td><td>PDF</td><td class="status">W przygotowaniu</td></tr><tr data-cat="narzedzia"><td>CitySim i DALEC</td><td>Narzędzia cyfrowe</td><td>EN</td><td>link</td><td class="status">W przygotowaniu</td></tr><tr data-cat="prezentacje"><td>Prezentacje</td><td>Prezentacje</td><td>PL / EN</td><td>PDF</td><td class="status">W przygotowaniu</td></tr><tr data-cat="grafika"><td>Logo i plansze</td><td>Materiały graficzne</td><td>—</td><td>PNG / SVG</td><td class="status">W przygotowaniu</td></tr></tbody></table></div></article></div>
+  <footer class="site-footer"><div class="wrap footer-grid">
+        <div><h2>LIGHT</h2><p>Looking for Integrated Solutions for Healthy PEDs</p><p>Projekt koordynowany przez Politechnikę Gdańską.</p></div>
+        <div><h2>Kontakt</h2><p>prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek</p><p><a href="mailto:juspecze@pg.edu.pl">juspecze@pg.edu.pl</a></p><p>ul. Gabriela Narutowicza 11/12<br>80-233 Gdańsk</p></div>
+        <div><h2>Na skróty</h2><p><a href="laboratoria.html">Laboratoria miejskie</a></p><p><a href="aktualnosci.html">Aktualności</a></p><p><a href="do-pobrania.html">Do pobrania</a></p><p><a href="https://pg.edu.pl/">pg.edu.pl</a></p></div>
+        </div><div class="wrap legal"><p>Prototyp układu i treści. Docelowa strona powstanie w CMS Politechniki Gdańskiej, w szablonie uczelni. Wpisy aktualności i pliki oznaczone jako przykładowe nie są jeszcze opublikowanymi materiałami projektu.</p></div></footer>
+  <script src="js/search-index.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

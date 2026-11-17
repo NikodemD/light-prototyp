@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News | LIGHT</title>
+  <meta name="description" content="News from the LIGHT project.">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    try {
+      var f = localStorage.getItem("light-font");
+      if (f && f !== "0") document.documentElement.dataset.font = f;
+      if (localStorage.getItem("light-contrast") === "1") document.documentElement.classList.add("contrast");
+    } catch (e) {}
+  </script>
+</head>
+<body data-root="../">
+  <a class="skip" href="#tresc">Skip to content</a>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="tools">
+        <nav class="lang" aria-label="Language">
+          <a href="../aktualnosci.html" >PL</a>
+          <a href="../en/news.html" aria-current="true">EN</a>
+        </nav>
+        <span>
+          <button class="tool-btn" type="button" data-font="0" aria-pressed="false">A <span class="sr">normal</span></button>
+          <button class="tool-btn" type="button" data-font="1" aria-pressed="false">A+</button>
+          <button class="tool-btn" type="button" data-font="2" aria-pressed="false">A++</button>
+        </span>
+        <button class="tool-btn" type="button" data-contrast aria-pressed="false">Change contrast</button>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="../en/index.html">
+        <img src="../img/light-logo.png?v=3" alt="LIGHT">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Main menu">
+        <ul>
+          <li><a href="../en/about.html">About</a></li>
+          <li class="has-sub"><a href="../en/living-labs.html">Living labs</a>
+            <ul class="submenu">
+              <li><a href="../en/lab-kartuzy.html">Kartuzy</a></li>
+              <li><a href="../en/lab-lund.html">Lund</a></li>
+              <li><a href="../en/lab-innsbruck.html">Innsbruck</a></li>
+            </ul>
+          </li>
+          <li><a href="../en/news.html" aria-current="page">News</a></li>
+          <li><a href="../en/results.html">Results</a></li>
+          <li><a href="../en/downloads.html">Downloads</a></li>
+          <li><a href="../en/partners.html">Partners</a></li>
+          <li><a href="../en/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="search" action="../en/search.html" method="get" role="search">
+        <label class="sr" for="q-news-en">Search</label>
+        <input id="q-news-en" type="search" name="q" placeholder="What are you looking for?">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><ol><li><a href="../en/index.html">LIGHT</a></li><li>News</li></ol></div></nav>
+  <div class="wrap page-title"><h1>News</h1></div>
+  <div class="wrap"><article class="prose" id="tresc"><p class="note">Items marked “sample” only show the layout of a future story. They do not report events that have already happened.</p><div class="filters" data-filter="#lista"><button type="button" data-cat="all" aria-pressed="true">All</button><button type="button" data-cat="meetings" aria-pressed="false">Meetings</button><button type="button" data-cat="fieldwork" aria-pressed="false">Fieldwork</button><button type="button" data-cat="workshops" aria-pressed="false">Workshops</button><button type="button" data-cat="results" aria-pressed="false">Results</button></div><ul class="news-list" id="lista"><li data-cat="meetings"><img src="../img/news/lund-01.jpg" alt=""><div><p class="kicker">27–30.09.2026 · Meetings</p><h2><a href="../en/news/lund.html">Consortium meeting in Lund</a></h2><p>On 27–30 September 2026 the LIGHT partners met in Lund. The programme included working sessions, a presentation of the DALEC tools and a walk through the city.</p></div></li><li data-cat="fieldwork"><img src="../img/news/martigny.jpg" alt=""><div><p class="kicker">17.08.2026 · Fieldwork</p><h2><a href="../en/news/martigny.html">Drones and a 3D model of Martigny</a></h2><p>Gdańsk Tech and Idiap scanned Martigny with drones and photogrammetry. The material will become a 3D model of the city, for daylight studies and the partners’ simulations.</p></div></li><li data-cat="meetings"><img src="../img/news/inauguracja.jpg" alt=""><div><p class="kicker">10.02.2026 · Meetings</p><h2><a href="../en/news/inauguration.html">Gdańsk Tech launches LIGHT</a></h2><p>On 10 February 2026 the Faculty of Architecture launched the international LIGHT project. It works on healthy Positive Energy Districts. Gdańsk Tech is the lead partner.</p></div></li><li data-cat="meetings"><img src="../img/talk.png" alt=""><div><p class="badge">Sample · Meetings</p><h2><a href="../en/news/meetings.html">Consortium meetings</a></h2><p>A short account, a few photos and the next step.</p></div></li><li data-cat="fieldwork"><img src="../img/idea.png" alt=""><div><p class="badge">Sample · Fieldwork</p><h2><a href="../en/news/fieldwork.html">Fieldwork and study visits</a></h2><p>What the team looks at, which data it collects and why that matters.</p></div></li><li data-cat="workshops"><img src="../img/idea.png" alt=""><div><p class="badge">Sample · Workshops</p><h2><a href="../en/news/workshops.html">Workshops and residents</a></h2><p>Conversations with municipalities, experts and local communities.</p></div></li><li data-cat="results"><img src="../img/idea.png" alt=""><div><p class="badge">Sample · Results</p><h2><a href="../en/news/tools.html">Progress on the digital tools</a></h2><p>Modelling, daylight, comfort, CitySim and DALEC in plain language.</p></div></li></ul></article></div>
+  <footer class="site-footer"><div class="wrap footer-grid">
+        <div><h2>LIGHT</h2><p>Looking for Integrated Solutions for Healthy PEDs</p><p>Coordinated by Gdańsk University of Technology.</p></div>
+        <div><h2>Contact</h2><p>Prof. Justyna Martyniuk-Pęczek, PhD, DSc, Eng., Arch.</p><p><a href="mailto:juspecze@pg.edu.pl">juspecze@pg.edu.pl</a></p><p>ul. Gabriela Narutowicza 11/12<br>80-233 Gdańsk, Poland</p></div>
+        <div><h2>Shortcuts</h2><p><a href="../en/living-labs.html">Living labs</a></p><p><a href="../en/news.html">News</a></p><p><a href="../en/downloads.html">Downloads</a></p><p><a href="https://pg.edu.pl/en">pg.edu.pl</a></p></div>
+        </div><div class="wrap legal"><p>Layout and content prototype. The live site will be published in the Gdańsk Tech CMS, using the university template. Sample news and files are not published project materials yet.</p></div></footer>
+  <script src="../js/search-index.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

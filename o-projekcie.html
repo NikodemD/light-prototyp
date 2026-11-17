@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O projekcie | LIGHT</title>
+  <meta name="description" content="Cele, wyzwania i dane projektu LIGHT.">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try {
+      var f = localStorage.getItem("light-font");
+      if (f && f !== "0") document.documentElement.dataset.font = f;
+      if (localStorage.getItem("light-contrast") === "1") document.documentElement.classList.add("contrast");
+    } catch (e) {}
+  </script>
+</head>
+<body data-root="">
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="tools">
+        <nav class="lang" aria-label="Język">
+          <a href="o-projekcie.html" aria-current="true">PL</a>
+          <a href="en/about.html" >EN</a>
+        </nav>
+        <span>
+          <button class="tool-btn" type="button" data-font="0" aria-pressed="false">A <span class="sr">normalny</span></button>
+          <button class="tool-btn" type="button" data-font="1" aria-pressed="false">A+</button>
+          <button class="tool-btn" type="button" data-font="2" aria-pressed="false">A++</button>
+        </span>
+        <button class="tool-btn" type="button" data-contrast aria-pressed="false">Zmień kontrast</button>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">
+        <img src="img/light-logo.png?v=3" alt="LIGHT">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Menu główne">
+        <ul>
+          <li><a href="o-projekcie.html" aria-current="page">O projekcie</a></li>
+          <li class="has-sub"><a href="laboratoria.html">Laboratoria</a>
+            <ul class="submenu">
+              <li><a href="laboratorium-kartuzy.html">Kartuzy</a></li>
+              <li><a href="laboratorium-lund.html">Lund</a></li>
+              <li><a href="laboratorium-innsbruck.html">Innsbruck</a></li>
+            </ul>
+          </li>
+          <li><a href="aktualnosci.html">Aktualności</a></li>
+          <li><a href="rezultaty.html">Rezultaty</a></li>
+          <li><a href="do-pobrania.html">Do pobrania</a></li>
+          <li><a href="partnerzy.html">Partnerzy</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <form class="search" action="szukaj.html" method="get" role="search">
+        <label class="sr" for="q-about-pl">Szukaj</label>
+        <input id="q-about-pl" type="search" name="q" placeholder="Czego szukasz?">
+        <button type="submit">Szukaj</button>
+      </form>
+    </div>
+  </header>
+  <nav class="crumbs" aria-label="Ścieżka"><div class="wrap"><ol><li><a href="index.html">LIGHT</a></li><li>O projekcie</li></ol></div></nav>
+  <div class="wrap page-title"><h1>O projekcie</h1></div>
+  <div class="wrap layout"><aside class="side"><p>O projekcie</p><ul><li><a href="o-projekcie.html#wyzwania">Wyzwania</a></li><li><a href="o-projekcie.html#rozwiazanie">Rozwiązanie</a></li><li><a href="o-projekcie.html#dane">Dane projektu</a></li><li><a href="o-projekcie.html#zasady">Zasady</a></li></ul></aside><article class="prose" id="tresc">
+<p>LIGHT proponuje, aby zdrowie i dobrostan mieszkańców były częścią planowania przestrzennego i przejścia do dzielnic dodatnich energetycznie.</p>
+<h2 id="wyzwania">Wyzwania</h2>
+<ul>
+  <li>Zagęszczanie miast bywa sprzeczne z dostępem do światła dziennego i promieniowania słonecznego.</li>
+  <li>Gęstsza zabudowa nasila miejską wyspę ciepła, hałas i pogarsza jakość powietrza.</li>
+  <li>Trudno spiąć systemy energetyczne z błękitno-zieloną infrastrukturą i mobilnością.</li>
+  <li>Renowacja dzielnic musi uwzględniać możliwości finansowe mieszkańców i sprawiedliwość zmiany.</li>
+  <li>Brakuje narzędzi, które łączą wskaźniki energii ze zdrowiem fizycznym i psychicznym.</li>
+</ul>
+<h2 id="rozwiazanie">Rozwiązanie</h2>
+<ul>
+  <li>Trzy laboratoria miejskie: Kartuzy, Lund i wirtualne laboratorium w Innsbrucku.</li>
+  <li>Rozwój narzędzi CitySim i DALEC oraz modelowanie scenariuszy z udziałem mieszkańców.</li>
+  <li>Ramy finansowania regeneracyjnego: korzyści społeczne, środowiskowe i finansowe razem.</li>
+</ul>
+<h2 id="dane">Dane projektu</h2>
+<dl class="facts">
+  <div><dt>Akronim</dt><dd>LIGHT</dd></div>
+  <div><dt>Pełna nazwa</dt><dd>Looking for Integrated Solutions for Healthy PEDs</dd></div>
+  <div><dt>Ścieżka</dt><dd>Positive Energy Districts</dd></div>
+  <div><dt>Podejście</dt><dd>Research-oriented approach</dd></div>
+  <div><dt>Czas</dt><dd>36 miesięcy, 01.2026–12.2028</dd></div>
+  <div><dt>Budżet</dt><dd>1&nbsp;263&nbsp;016,37 EUR</dd></div>
+  <div><dt>Nakład pracy</dt><dd>162 osobomiesiące</dd></div>
+  <div><dt>Koordynacja</dt><dd>Politechnika Gdańska</dd></div>
+</dl>
+<h2 id="zasady">Równość i zasada DNSH</h2>
+<p>Ponad połowę zespołu badawczego i koordynację projektu stanowią kobiety. Konsorcjum ogranicza ślad węglowy: podróże lądowe, spotkania online, zielone zamówienia i mniej materiałów drukowanych.</p>
+<p class="note">Dat etapów badawczych nie wpisujemy z góry. Oś czasu na stronie rezultatów ma na razie początek i koniec projektu. Kamienie milowe dojdą po uzgodnieniu z zespołem.</p>
+</article></div>
+  <footer class="site-footer"><div class="wrap footer-grid">
+        <div><h2>LIGHT</h2><p>Looking for Integrated Solutions for Healthy PEDs</p><p>Projekt koordynowany przez Politechnikę Gdańską.</p></div>
+        <div><h2>Kontakt</h2><p>prof. dr hab. inż. arch. Justyna Martyniuk-Pęczek</p><p><a href="mailto:juspecze@pg.edu.pl">juspecze@pg.edu.pl</a></p><p>ul. Gabriela Narutowicza 11/12<br>80-233 Gdańsk</p></div>
+        <div><h2>Na skróty</h2><p><a href="laboratoria.html">Laboratoria miejskie</a></p><p><a href="aktualnosci.html">Aktualności</a></p><p><a href="do-pobrania.html">Do pobrania</a></p><p><a href="https://pg.edu.pl/">pg.edu.pl</a></p></div>
+        </div><div class="wrap legal"><p>Prototyp układu i treści. Docelowa strona powstanie w CMS Politechniki Gdańskiej, w szablonie uczelni. Wpisy aktualności i pliki oznaczone jako przykładowe nie są jeszcze opublikowanymi materiałami projektu.</p></div></footer>
+  <script src="js/search-index.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
