@@ -1085,12 +1085,10 @@ def team_body(pl):
             f'<p class="org">{org}</p></div></li>'
         )
     if pl:
-        intro = "Pod imieniem jest instytucja, z której dana osoba przychodzi."
         note = "Lista może się jeszcze powiększyć. Kolejne osoby dopiszemy razem ze zdjęciem i instytucją."
     else:
-        intro = "Under each name is the organisation the person comes from."
         note = "The list can still grow. Further people will be added with a photo and an organisation."
-    return f'<p>{intro}</p><ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
+    return f'<ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
 
 
 
