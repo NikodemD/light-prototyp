@@ -959,13 +959,13 @@ def team_members():
             "en_org": "Gdańsk University of Technology",
             "pl_role": "Koordynatorka projektu",
             "en_role": "Project coordinator",
-            "photo": "",
+            "photo": "img/team/justyna-martyniuk-peczek.jpg",
             "initials": "JM",
             "url": "https://pg.edu.pl/p/justyna-martyniuk-peczek-19369",
         },
         {
-            "pl_name": "dr Dubon Rodrigue",
-            "en_name": "Dr Dubon Rodrigue",
+            "pl_name": "dr inż. Dubon Rodrigue",
+            "en_name": "Dubon Rodrigue, PhD, Eng.",
             "pl_org": "Idiap Research Institute",
             "en_org": "Idiap Research Institute",
             "pl_role": "Badacz po doktoracie",
@@ -975,19 +975,19 @@ def team_members():
             "url": "https://www.idiap.ch/en/people/dubon-rodrigue-2064",
         },
         {
-            "pl_name": "prof. Marie-Claude Dubois",
-            "en_name": "Prof. Marie-Claude Dubois",
+            "pl_name": "dr inż. Marie-Claude Dubois",
+            "en_name": "Marie-Claude Dubois, PhD, Eng.",
             "pl_org": "Uniwersytet w Lund",
             "en_org": "Lund University",
-            "pl_role": "Kierowniczka zespołu w Lund",
-            "en_role": "Lund team lead",
+            "pl_role": "Associate professor",
+            "en_role": "Associate professor",
             "photo": "img/team/marie-claude-dubois.jpg",
             "initials": "MD",
             "url": "https://portal.research.lu.se/en/persons/marie-claude-dubois/",
         },
         {
-            "pl_name": "Jérôme Kämpf",
-            "en_name": "Jérôme Kämpf",
+            "pl_name": "prof. dr inż. Jérôme Kämpf",
+            "en_name": "Prof. Jérôme Kämpf, PhD, Eng.",
             "pl_org": "Idiap Research Institute",
             "en_org": "Idiap Research Institute",
             "pl_role": "Starszy pracownik naukowy",
@@ -1029,6 +1029,39 @@ def team_members():
             "initials": "MT",
             "url": "https://informator.gumed.edu.pl/259",
         },
+        {
+            "pl_name": "Przemysław Kluz",
+            "en_name": "Przemysław Kluz",
+            "pl_org": "Gdańska Fundacja Innowacji Społecznych",
+            "en_org": "Gdańsk Foundation for Social Innovation",
+            "pl_role": "Dyrektor ds. organizacji społeczności lokalnej",
+            "en_role": "Director for community organising",
+            "photo": "img/team/przemyslaw-kluz.jpg",
+            "initials": "PK",
+            "url": "https://www.kongresobywatelski.pl/osoby/kluz-przemyslaw/",
+        },
+        {
+            "pl_name": "dr inż. David Geisler-Moroder",
+            "en_name": "David Geisler-Moroder, PhD, Eng.",
+            "pl_org": "Uniwersytet w Innsbrucku",
+            "en_org": "Universität Innsbruck",
+            "pl_role": "Pracownik naukowy",
+            "en_role": "Research associate",
+            "photo": "img/team/david-geisler-moroder.jpg",
+            "initials": "DG",
+            "url": "https://www.uibk.ac.at/en/energy-efficient-building/about-us/staff/david-geisler-moroder/",
+        },
+        {
+            "pl_name": "dr inż. Nikodem Derengowski",
+            "en_name": "Nikodem Derengowski, PhD, Eng.",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "Pracownik naukowy",
+            "en_role": "Researcher",
+            "photo": "img/team/nikodem-derengowski.jpg",
+            "initials": "ND",
+            "url": "https://pg.edu.pl/p/nikodem-derengowski-1658312",
+        },
     ]
 
 
@@ -1037,7 +1070,6 @@ def team_body(pl):
     for person in team_members():
         name = person["pl_name"] if pl else person["en_name"]
         org = person["pl_org"] if pl else person["en_org"]
-        role = person["pl_role"] if pl else person["en_role"]
         photo = person.get("photo") or ""
         if photo:
             face = f'<img class="avatar" src="{asset(photo, 0 if pl else 1)}" alt="">'
@@ -1050,15 +1082,14 @@ def team_body(pl):
         items.append(
             f'<li class="team-card">{face}<div>'
             f'<h2>{title}</h2>'
-            f'<p class="role">{role}</p>'
             f'<p class="org">{org}</p></div></li>'
         )
     if pl:
-        intro = "Każda osoba ma zdjęcie, rolę w projekcie i instytucję."
-        note = "Lista może się jeszcze powiększyć. Kolejne osoby dopiszemy razem ze zdjęciem, rolą i instytucją."
+        intro = "Pod imieniem jest instytucja, z której dana osoba przychodzi."
+        note = "Lista może się jeszcze powiększyć. Kolejne osoby dopiszemy razem ze zdjęciem i instytucją."
     else:
-        intro = "Each person has a photo, a role in the project and an organisation."
-        note = "The list can still grow. Further people will be added with a photo, a role and an organisation."
+        intro = "Under each name is the organisation the person comes from."
+        note = "The list can still grow. Further people will be added with a photo and an organisation."
     return f'<p>{intro}</p><ul class="team-list">{"".join(items)}</ul><p class="note">{note}</p>'
 
 
@@ -1538,7 +1569,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1557,7 +1588,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
