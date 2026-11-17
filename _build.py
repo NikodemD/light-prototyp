@@ -1176,11 +1176,18 @@ def team_rank(person):
     else:
         rank = 2
     plain = en.removeprefix("Prof. ").removeprefix("Dr. ")
+    # This group stays together, with Nikodem last and Moroder first.
+    pin = {
+        "David Geisler-Moroder": 0,
+        "Niko Gentile": 1,
+        "Natalia Sokół": 2,
+        "Roman Ruczyński": 3,
+        "Nikodem Derengowski": 4,
+    }
+    if plain in pin:
+        return (rank, 0, pin[plain])
     surname = plain.split()[-1].casefold()
-    # Nikodem sits after Gentile, Sokół and Ruczyński, at the end of the doctors.
-    if plain == "Nikodem Derengowski":
-        surname = "\uffff"
-    return (rank, surname, plain.casefold())
+    return (rank, 1, surname)
 
 
 def team_body(pl):
