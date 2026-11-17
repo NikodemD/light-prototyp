@@ -1140,8 +1140,8 @@ def team_members():
             "url": "https://gfis.pl/",
         },
         {
-            "pl_name": "dr inż. Aleksandra Koszarek-Cyra Aleksandra Szewczyk",
-            "en_name": "Dr. Aleksandra Koszarek-Cyra Aleksandra Szewczyk",
+            "pl_name": "dr inż. Aleksandra Koszarek-Cyra",
+            "en_name": "Dr. Aleksandra Koszarek-Cyra",
             "pl_org": "Uniwersytet Gdański",
             "en_org": "University of Gdańsk",
             "pl_role": "",
