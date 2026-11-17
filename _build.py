@@ -1062,6 +1062,17 @@ def team_members():
             "initials": "ND",
             "url": "https://orcid.org/0009-0001-9071-8010",
         },
+        {
+            "pl_name": "dr inż. arch. Roman Ruczyński",
+            "en_name": "Roman Ruczyński, PhD, Eng., Arch.",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "img/team/roman-ruczynski.jpg",
+            "initials": "RR",
+            "url": "https://pg.edu.pl/p/roman-ruczynski-8644",
+        },
     ]
 
 
@@ -1567,7 +1578,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1586,7 +1597,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
