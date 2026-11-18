@@ -1119,8 +1119,8 @@ def team_members():
             "url": "https://kartuzy.pl/",
         },
         {
-            "pl_name": "dr hab. Anna Wojewnik-Filipkowska, prof. UG",
-            "en_name": "Prof. Anna Wojewnik-Filipkowska",
+            "pl_name": "dr hab. Anna Wojewnik-Filipkowska",
+            "en_name": "Dr. Anna Wojewnik-Filipkowska",
             "pl_org": "Uniwersytet Gdański",
             "en_org": "University of Gdańsk",
             "pl_role": "",
@@ -1182,6 +1182,7 @@ def team_rank(person):
         "Natalia Sokół": 1,
         "Roman Ruczyński": 2,
         "Nikodem Derengowski": 3,
+        "Anna Wojewnik-Filipkowska": 4,
     }
     if plain in pin:
         return (rank, 0, pin[plain])
