@@ -976,7 +976,7 @@ def team_members():
             "url": "https://www.idiap.ch/en/people/dubon-rodrigue-2064",
         },
         {
-            "pl_name": "dr inż. Marie-Claude Dubois",
+            "pl_name": "prof. dr inż. Marie-Claude Dubois",
             "en_name": "Prof. Marie-Claude Dubois",
             "pl_org": "Uniwersytet w Lund",
             "en_org": "Lund University",
@@ -1020,7 +1020,7 @@ def team_members():
             "url": "https://pg.edu.pl/p/natalia-sokol-944955",
         },
         {
-            "pl_name": "dr hab. inż. Maciej Tankiewicz, prof. uczelni",
+            "pl_name": "dr hab. inż. Maciej Tankiewicz",
             "en_name": "Prof. Maciej Tankiewicz",
             "pl_org": "Gdański Uniwersytet Medyczny",
             "en_org": "Medical University of Gdańsk",
@@ -1075,7 +1075,7 @@ def team_members():
             "url": "https://pg.edu.pl/p/roman-ruczynski-8644",
         },
         {
-            "pl_name": "dr hab. inż. arch. Izabela Mironowicz, prof. uczelni",
+            "pl_name": "dr hab. inż. arch. Izabela Mironowicz",
             "en_name": "Prof. Izabela Mironowicz",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
@@ -1097,7 +1097,7 @@ def team_members():
             "url": "https://pg.edu.pl/p/anna-zackiewicz-1298558",
         },
         {
-            "pl_name": "prof. dr inż. Niko Gentile",
+            "pl_name": "dr inż. Niko Gentile",
             "en_name": "Prof. Niko Gentile",
             "pl_org": "Uniwersytet w Lund",
             "en_org": "Lund University",
