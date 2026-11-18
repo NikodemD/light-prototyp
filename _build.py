@@ -220,7 +220,10 @@ def footer(p):
             news=link("aktualnosci.html", d),
             files=link("do-pobrania.html", d),
         )
-        legal = "Prototyp układu i treści. Docelowa strona powstanie w CMS Politechniki Gdańskiej, w szablonie uczelni. Wpisy aktualności i pliki oznaczone jako przykładowe nie są jeszcze opublikowanymi materiałami projektu."
+        legal = (
+            "<p>Prototyp układu i treści. Docelowa strona powstanie w CMS Politechniki Gdańskiej, w szablonie uczelni. Wpisy aktualności i pliki oznaczone jako przykładowe nie są jeszcze opublikowanymi materiałami projektu.</p>"
+            "<p>Projekt „LIGHT – Looking for Integrated Solutions for Healthy PEDs” uzyskał dofinansowanie następujących agencji: Narodowego Centrum Badań i Rozwoju (NCBR) w Polsce, Szwedzkiej Agencji Energetycznej (Energimyndigheten) w Szwecji, Austriackiej Agencji Promocji Badań (FFG) w Austrii oraz Szwajcarskiej Narodowej Fundacji Nauki (SNSF) w Szwajcarii, w ramach partnerstwa Driving Urban Transitions, współfinansowanego przez Komisję Europejską. Wyłączna odpowiedzialność za treść tej strony spoczywa na projekcie i w żaden sposób nie odzwierciedla stanowiska Unii Europejskiej.</p>"
+        )
     else:
         text = """
         <div><h2>LIGHT</h2><p>Looking for Integrated Solutions for Healthy PEDs</p><p>Coordinated by Gdańsk University of Technology.</p></div>
@@ -231,8 +234,11 @@ def footer(p):
             news=link("en/news.html", d),
             files=link("en/downloads.html", d),
         )
-        legal = "Layout and content prototype. The live site will be published in the Gdańsk Tech CMS, using the university template. Sample news and files are not published project materials yet."
-    return f'<footer class="site-footer"><div class="wrap footer-grid">{text}</div><div class="wrap legal"><p>{legal}</p></div></footer>'
+        legal = (
+            "<p>Layout and content prototype. The live site will be published in the Gdańsk Tech CMS, using the university template. Sample news and files are not published project materials yet.</p>"
+            "<p>Project “LIGHT – Looking for Integrated Solutions for Healthy PEDs” has been funded by the following funding agencies: the National Centre for Research and Development (NCBR) in Poland, the Swedish Energy Agency (Energimyndigheten) in Sweden, the Austrian Research Promotion Agency (FFG) in Austria, and the Swiss National Science Foundation (SNSF) in Switzerland under the Driving Urban Transitions Partnership, which has been co-funded by the European Commission. The sole responsibility for the content of this website lies with the project and in no way reflects the views of the European Union.</p>"
+        )
+    return f'<footer class="site-footer"><div class="wrap footer-grid">{text}</div><div class="wrap legal">{legal}</div></footer>'
 
 
 def add(page):
