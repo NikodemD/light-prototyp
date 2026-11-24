@@ -1126,7 +1126,7 @@ def team_members():
             "en_org": "Gdańsk University of Technology",
             "pl_role": "",
             "en_role": "",
-            "photo": "",
+            "photo": "img/team/izabela-mironowicz.jpg",
             "initials": "IM",
             "url": "https://pg.edu.pl/p/izabela-mironowicz-880097",
         },
