@@ -1214,7 +1214,7 @@ def team_members():
             "en_org": "Gdańsk University of Technology",
             "pl_role": "",
             "en_role": "",
-            "photo": "",
+            "photo": "img/team/weronika-maria-mazurkiewicz.jpg",
             "initials": "WM",
             "url": "https://pg.edu.pl/p/weronika-mazurkiewicz-163163",
         },
