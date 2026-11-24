@@ -138,7 +138,7 @@ def chrome(p):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{p["title"]}</title>
   <meta name="description" content="{p["desc"]}">
-  <link rel="stylesheet" href="{asset("css/style.css", d)}">
+  <link rel="stylesheet" href="{asset("css/style.css", d)}?v=7">
   <script>
     try {{
       var f = localStorage.getItem("light-font");
@@ -238,7 +238,33 @@ def footer(p):
             "<p>Layout and content prototype. The live site will be published in the Gdańsk Tech CMS, using the university template. Sample news and files are not published project materials yet.</p>"
             "<p>Project “LIGHT – Looking for Integrated Solutions for Healthy PEDs” (F-DUT-2024-0011) has been funded by the following funding agencies: the National Centre for Research and Development (NCBiR) in Poland, the Swedish Energy Agency (SEA) in Sweden, the Austrian Research Promotion Agency (FFG) in Austria, and the Swiss National Science Foundation (SNSF) in Switzerland under the Driving Urban Transitions Partnership, which has been co-funded by the European Commission. The sole responsibility for the content of this website lies with the project and in no way reflects the views of the European Union.</p>"
         )
-    return f'<footer class="site-footer"><div class="wrap footer-grid">{text}</div><div class="wrap legal">{legal}</div></footer>'
+    return f'<footer class="site-footer"><div class="wrap footer-grid">{text}</div><div class="wrap legal">{legal}</div>{funder_logos(pl, d)}</footer>'
+
+
+def funder_logos(pl, depth):
+    ncbr = "img/funders/ncbr-pl.png" if pl else "img/funders/ncbr-en.png"
+    ncbr_alt = "Narodowe Centrum Badań i Rozwoju" if pl else "National Centre for Research and Development"
+    ncbr_url = "https://www.gov.pl/web/ncbr" if pl else "https://www.gov.pl/web/ncbr-en"
+    eu = "Współfinansowane<br>przez Unię Europejską" if pl else "Co-funded by<br>the European Union"
+    items = [
+        (ncbr, ncbr_url, ncbr_alt),
+        ("img/funders/dut.png", "https://dutpartnership.eu/", "Driving Urban Transitions"),
+        ("img/funders/ffg.png", "https://www.ffg.at/", "Austriacka Agencja Promocji Badań" if pl else "Austrian Research Promotion Agency"),
+        ("img/funders/snsf.svg", "https://www.snf.ch/", "Szwajcarska Narodowa Fundacja Nauki" if pl else "Swiss National Science Foundation"),
+        ("img/funders/energimyndigheten.svg", "https://www.energimyndigheten.se/", "Szwedzka Agencja Energetyczna" if pl else "Swedish Energy Agency"),
+    ]
+    bits = []
+    for src, href, alt in items:
+        bits.append(
+            f'<a href="{href}" target="_blank" rel="noopener">'
+            f'<img src="{asset(src, depth)}" alt="{alt}"></a>'
+        )
+    bits.append(
+        f'<a class="eu" href="https://european-union.europa.eu/" target="_blank" rel="noopener">'
+        f'<img src="{asset("img/funders/eu-flag.svg", depth)}" alt="">'
+        f'<span>{eu}</span></a>'
+    )
+    return f'<div class="funders"><div class="wrap">{"".join(bits)}</div></div>'
 
 
 def add(page):
