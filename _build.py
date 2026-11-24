@@ -466,9 +466,9 @@ def place_photo(src, alt, caption, depth):
 
 def lab_kartuzy(pl, depth):
     photo = place_photo(
-        "img/labs/kartuzy.jpg",
-        "Kolegiata i jezioro w Kartuzach" if pl else "The collegiate church and lake in Kartuzy",
-        "Kolegiata i jezioro w Kartuzach. Zdjęcie: Tomasz Drążkowski." if pl else "The collegiate church and lake in Kartuzy. Photo: Tomasz Drążkowski.",
+        "img/labs/kartuzy-bg.jpg",
+        "Kartuzy z lotu ptaka" if pl else "An aerial view of Kartuzy",
+        "Kartuzy z lotu ptaka. Zdjęcie: Michał Czachorowski." if pl else "An aerial view of Kartuzy. Photo: Michał Czachorowski.",
         depth,
     )
     if pl:
