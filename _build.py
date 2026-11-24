@@ -579,7 +579,7 @@ REAL_NEWS = [
         "id": "lund",
         "cat": "spotkania",
         "date": "27–30.09.2026",
-        "img": "img/news/lund-01.jpg",
+        "img": "img/news/lund-01.jpg?v=2",
         "pl": {
             "file": "aktualnosci/lund.html",
             "kicker": "Spotkania",
@@ -638,10 +638,10 @@ REAL_NEWS = [
 ]
 
 LUND_PHOTOS = [
-    ("img/news/lund-01.jpg", "Prezentacja narzędzi DALEC podczas spotkania w Lund.", "DALEC tools presented at the Lund meeting."),
+    ("img/news/lund-01.jpg?v=2", "Prezentacja narzędzi DALEC podczas spotkania w Lund.", "DALEC tools presented at the Lund meeting."),
     ("img/news/lund-02.jpg", "Lot dronem podczas spotkania.", "A drone flight during the meeting."),
     ("img/news/lund-03.jpg", "Wyjście w teren: rozmowa na dziedzińcu.", "A site visit: a talk in a courtyard."),
-    ("img/news/lund-04.jpg", "Budynek oglądany podczas pobytu w Lund.", "A building seen during the stay in Lund."),
+    ("img/news/lund-04.jpg?v=2", "Budynek oglądany podczas pobytu w Lund.", "A building seen during the stay in Lund."),
     ("img/news/lund-05.jpg", "Spacer po Lund, przystanek Lund C.", "A walk through Lund, at the Lund C stop."),
     ("img/news/lund-06.jpg", "Zdjęcie grupowe uczestników spotkania w Lund.", "Group photo of the meeting participants in Lund."),
     ("img/news/lund-07.jpg", "Wspólny posiłek podczas spotkania.", "A shared meal during the meeting."),
@@ -1397,7 +1397,7 @@ def real_article(key, pl, depth):
         shots = []
         for path, cap_pl, cap_en in LUND_PHOTOS:
             cap = cap_pl if pl else cap_en
-            shots.append(f'<figure class="figure"><img src="{asset(path, depth)}" alt="{cap}"><figcaption>{cap}</figcaption></figure>')
+            shots.append(f'<figure class="figure"><img src="{asset(path, depth)}" alt="{cap}"></figure>')
         gallery = f'<div class="gallery">{"".join(shots)}</div>'
         if pl:
             return f'''
