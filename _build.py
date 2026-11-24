@@ -1169,8 +1169,8 @@ def team_members():
             "url": "https://foton-oze.pl/zespol/",
         },
         {
-            "pl_name": "dr inż. arch. Weronika Mazurkiewicz",
-            "en_name": "Dr. Weronika Mazurkiewicz",
+            "pl_name": "dr inż. arch. Weronika Maria Mazurkiewicz",
+            "en_name": "Dr. Weronika Maria Mazurkiewicz",
             "pl_org": "Politechnika Gdańska",
             "en_org": "Gdańsk University of Technology",
             "pl_role": "",
@@ -1178,6 +1178,28 @@ def team_members():
             "photo": "",
             "initials": "WM",
             "url": "https://pg.edu.pl/p/weronika-mazurkiewicz-163163",
+        },
+        {
+            "pl_name": "dr hab. inż. arch. Karolina Krośnicka",
+            "en_name": "Prof. Karolina Krośnicka",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "KK",
+            "url": "https://pg.edu.pl/p/karolina-krosnicka-405355",
+        },
+        {
+            "pl_name": "dr inż. arch. Barbara Zgórska",
+            "en_name": "Dr. Barbara Zgórska",
+            "pl_org": "Politechnika Gdańska",
+            "en_org": "Gdańsk University of Technology",
+            "pl_role": "",
+            "en_role": "",
+            "photo": "",
+            "initials": "BZ",
+            "url": "https://pg.edu.pl/p/barbara-zgorska-480266",
         },
     ]
 
@@ -1737,7 +1759,7 @@ INDEX = [
     ("pl", "Rezultaty i narzędzia", "Wytyczne CitySim DALEC oś czasu", "rezultaty.html"),
     ("pl", "Do pobrania", "Raporty wytyczne prezentacje materiały", "do-pobrania.html"),
     ("pl", "Partnerzy", "Konsorcjum Politechnika Gdańska Idiap Lund Innsbruck", "partnerzy.html"),
-    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra Aleksandra Szewczyk Weronika Mazurkiewicz", "zespol.html"),
+    ("pl", "Zespół", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra Aleksandra Szewczyk Weronika Maria Mazurkiewicz Karolina Krośnicka Barbara Zgórska", "zespol.html"),
     ("pl", "Kontakt", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "kontakt.html"),
     ("en", "LIGHT", "Project home", "en/index.html"),
     ("en", "About the project", "Challenges solution facts budget duration", "en/about.html"),
@@ -1756,7 +1778,7 @@ INDEX = [
     ("en", "Results and tools", "Guidelines CitySim DALEC timeline", "en/results.html"),
     ("en", "Downloads", "Reports guidelines slides graphics", "en/downloads.html"),
     ("en", "Partners", "Consortium Gdańsk Tech Idiap Lund Innsbruck", "en/partners.html"),
-    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra Aleksandra Szewczyk Weronika Mazurkiewicz", "en/team.html"),
+    ("en", "Team", "Justyna Martyniuk-Pęczek Dubon Rodrigue Marie-Claude Dubois Jérôme Kämpf Olga Martyniuk Natalia Sokół Maciej Tankiewicz Przemysław Kluz David Geisler-Moroder Nikodem Derengowski Roman Ruczyński Izabela Mironowicz Anna Zackiewicz Niko Gentile Natalia Lekner Anna Wojewnik-Filipkowska Ewa Patyk Aleksandra Koszarek-Cyra Aleksandra Szewczyk Weronika Maria Mazurkiewicz Karolina Krośnicka Barbara Zgórska", "en/team.html"),
     ("en", "Contact", "Justyna Martyniuk-Pęczek juspecze@pg.edu.pl", "en/contact.html"),
 ]
 
