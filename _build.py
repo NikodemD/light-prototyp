@@ -642,6 +642,18 @@ LUND_PHOTOS = [
     ("img/news/lund-03.jpg", "Wyjście w teren: rozmowa na dziedzińcu.", "A site visit: a talk in a courtyard."),
     ("img/news/lund-04.jpg", "Budynek oglądany podczas pobytu w Lund.", "A building seen during the stay in Lund."),
     ("img/news/lund-05.jpg", "Spacer po Lund, przystanek Lund C.", "A walk through Lund, at the Lund C stop."),
+    ("img/news/lund-06.jpg", "Zdjęcie grupowe uczestników spotkania w Lund.", "Group photo of the meeting participants in Lund."),
+    ("img/news/lund-07.jpg", "Wspólny posiłek podczas spotkania.", "A shared meal during the meeting."),
+    ("img/news/lund-08.jpg", "Sesja robocza: uczestnicy przy laptopach.", "A working session, with participants at their laptops."),
+    ("img/news/lund-09.jpg", "Omówienie protokołu oceny sąsiedztwa i katalogu kryteriów.", "Discussion of the neighbourhood assessment protocol and the catalogue of criteria."),
+    ("img/news/lund-10.jpg", "Wyjście w teren: omówienie mapy przy przystanku.", "A site visit: a map explained at a stop."),
+    ("img/news/lund-11.jpg", "Prezentacja zespołu Uniwersytetu Gdańskiego o transformacji energetycznej miast.", "A presentation by the University of Gdańsk team on the urban energy transition."),
+    ("img/news/lund-12.jpg", "Pokaz modelu zabudowy i zieleni.", "A demonstration of a model of buildings and greenery."),
+    ("img/news/lund-13.jpg", "Zdjęcie grupowe na dziedzińcu.", "A group photo in a courtyard."),
+    ("img/news/lund-14.jpg", "Prezentacja widoku miasta z lotu ptaka.", "A presentation of an aerial view of the city."),
+    ("img/news/lund-15.jpg", "Prezentacja schematu projektu LIGHT.", "A presentation of the LIGHT project diagram."),
+    ("img/news/lund-16.jpg", "Jérôme Kämpf omawia kolejne kroki pracy z modelem CitySim.", "Jérôme Kämpf presents the next steps for the CitySim model."),
+    ("img/news/lund-17.jpg", "Prezentacja Idiap o modelowaniu zanieczyszczeń na zewnątrz.", "An Idiap presentation on outdoor pollutant modelling."),
 ]
 
 SRC_LIGHT = "https://arch.pg.edu.pl/2026-02/pg-inauguruje-miedzynarodowy-projekt-light-w-ramach-dut-horyzont-europa"
