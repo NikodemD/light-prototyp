@@ -938,7 +938,7 @@ def partners():
          "Polska", "Poland", "Partner", "Partner",
          "Organizacja społeczna. Włącza mieszkańców i lokalnych partnerów.",
          "A social organisation. Brings in residents and local partners."),
-        ("kartuzy", "kartuzy.png", "https://kartuzy.pl/", False,
+        ("kartuzy", "kartuzy.png", "https://www.kartuzy.pl/", False,
          "Gmina Kartuzy", "Municipality of Kartuzy",
          "Polska", "Poland", "Partner", "Partner",
          "Samorząd laboratorium. Renowacja istniejącej zabudowy i błękitno-zielona infrastruktura.",
@@ -1161,7 +1161,7 @@ def team_members():
             "en_role": "",
             "photo": "img/team/natalia-lekner.jpg",
             "initials": "NL",
-            "url": "https://kartuzy.pl/",
+            "url": "https://www.kartuzy.pl/",
         },
         {
             "pl_name": "dr hab. Anna Wojewnik-Filipkowska",
