@@ -1243,7 +1243,7 @@ def team_members():
             "en_org": "Medical University of Gdańsk",
             "pl_role": "",
             "en_role": "",
-            "photo": "img/team/gracja-topka-bielecka.jpg?v=3",
+            "photo": "img/team/gracja-topka-bielecka.jpg?v=4",
             "initials": "GT",
             "url": "https://informator.gumed.edu.pl/259e",
         },
