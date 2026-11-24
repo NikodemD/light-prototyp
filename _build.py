@@ -651,10 +651,10 @@ LUND_PHOTOS = [
     ("img/news/lund-11.jpg", "Prezentacja zespołu Uniwersytetu Gdańskiego o transformacji energetycznej miast.", "A presentation by the University of Gdańsk team on the urban energy transition."),
     ("img/news/lund-12.jpg", "Pokaz modelu zabudowy i zieleni.", "A demonstration of a model of buildings and greenery."),
     ("img/news/lund-13.jpg", "Zdjęcie grupowe na dziedzińcu.", "A group photo in a courtyard."),
-    ("img/news/lund-14.jpg", "Prezentacja widoku miasta z lotu ptaka.", "A presentation of an aerial view of the city."),
     ("img/news/lund-15.jpg", "Prezentacja schematu projektu LIGHT.", "A presentation of the LIGHT project diagram."),
     ("img/news/lund-16.jpg", "Jérôme Kämpf omawia kolejne kroki pracy z modelem CitySim.", "Jérôme Kämpf presents the next steps for the CitySim model."),
     ("img/news/lund-17.jpg", "Prezentacja Idiap o modelowaniu zanieczyszczeń na zewnątrz.", "An Idiap presentation on outdoor pollutant modelling."),
+    ("img/news/lund-14.jpg", "Prezentacja widoku miasta z lotu ptaka.", "A presentation of an aerial view of the city."),
 ]
 
 SRC_LIGHT = "https://arch.pg.edu.pl/2026-02/pg-inauguruje-miedzynarodowy-projekt-light-w-ramach-dut-horyzont-europa"
