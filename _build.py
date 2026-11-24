@@ -1360,7 +1360,6 @@ def contact_body(pl):
 <div class="contact-grid">
   <div>
     <p>Koordynacja projektu jest na Politechnice Gdańskiej. Zapraszamy do kontaktu samorządy, badaczy i instytucje zainteresowane współpracą.</p>
-    <p>Formularza zgłoszeniowego nie ma. Taki formularz wymaga uzgodnienia z uczelnią zasad ochrony danych i obsługi wiadomości.</p>
     <h2>Laboratoria</h2>
     <p><a href="laboratorium-kartuzy.html">Kartuzy</a> · <a href="laboratorium-lund.html">Lund</a> · <a href="laboratorium-innsbruck.html">Innsbruck</a></p>
   </div>
@@ -1377,7 +1376,6 @@ def contact_body(pl):
 <div class="contact-grid">
   <div>
     <p>The project is coordinated at Gdańsk University of Technology. Municipalities, researchers and other organisations are welcome to write.</p>
-    <p>There is no message form. A form needs the university’s rules on personal data and how messages are handled.</p>
     <h2>Living labs</h2>
     <p><a href="lab-kartuzy.html">Kartuzy</a> · <a href="lab-lund.html">Lund</a> · <a href="lab-innsbruck.html">Innsbruck</a></p>
   </div>
