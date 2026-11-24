@@ -457,6 +457,7 @@ html.contrast .europe-map text, html.contrast .europe figcaption { fill: #fff; c
 .logo-row { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.6rem; }
 .logo-row a { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 8px; background: #fff; min-height: 4.2rem; padding: 0.4rem; }
 .logo-row img { max-height: 3rem; width: auto; max-width: 100%; }
+.logo-row a[href$="#foton"] img { max-height: 2.25rem; }
 html.contrast .partner-card, html.contrast .logo-row a, html.contrast .team-card { background: #000; border-color: #ff0; }
 
 .prose .team-list {
