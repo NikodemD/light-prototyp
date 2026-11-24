@@ -138,7 +138,7 @@ def chrome(p):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{p["title"]}</title>
   <meta name="description" content="{p["desc"]}">
-  <link rel="stylesheet" href="{asset("css/style.css", d)}?v=9">
+  <link rel="stylesheet" href="{asset("css/style.css", d)}?v=10">
   <script>
     try {{
       var f = localStorage.getItem("light-font");

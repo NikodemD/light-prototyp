@@ -449,7 +449,6 @@ html.contrast .europe-map text, html.contrast .europe figcaption { fill: #fff; c
   margin: 0;
   white-space: nowrap;
 }
-.logo-row a[href$="#gfsi"] img,
 .logo-row a[href$="#kartuzy"] img,
 .logo-row a[href$="#uibk"] img { max-height: 1.65rem; max-width: 7rem; }
 .logo-row { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.6rem; }
@@ -458,6 +457,7 @@ html.contrast .europe-map text, html.contrast .europe figcaption { fill: #fff; c
 .logo-row a[href$="#foton"] img { max-height: 2.25rem; }
 .logo-row a[href$="#pg"] img,
 .logo-row a[href$="#lu"] img { max-height: 2.0625rem; max-width: 8.75rem; }
+.logo-row a[href$="#gfsi"] img { max-height: 1.8975rem; max-width: 8.05rem; }
 html.contrast .partner-card, html.contrast .logo-row a, html.contrast .team-card { background: #000; border-color: #ff0; }
 
 .prose .team-list {
