@@ -398,9 +398,9 @@ def europe_map(places, label, caption):
 def lab_cards(pl, depth):
     if pl:
         rows = [
-            ("laboratorium-kartuzy.html", "img/labs/kartuzy.jpg", "center bottom", "cover", "Polska", "Kartuzy",
+            ("laboratorium-kartuzy.html", "img/labs/kartuzy-bg.jpg", "center 22%", "cover", "Polska", "Kartuzy",
              "Renowacja istniejącej zabudowy, błękitno-zielona infrastruktura oraz opłacalność i skutki środowiskowe.",
-             "Kolegiata i jezioro w Kartuzach"),
+             "Zespół na spotkaniu"),
             ("laboratorium-lund.html", "img/labs/lund.jpg", "center bottom", "cover", "Szwecja", "Lund",
              "Zagęszczanie miasta łączone z wytwarzaniem energii i rozwiązaniami bezemisyjnymi.",
              "Widok na Lund"),
@@ -408,12 +408,12 @@ def lab_cards(pl, depth):
              "Scenariusze zagęszczania i ich wpływ na hałas, powietrze i światło dzienne.",
              "Ulica w Innsbrucku"),
         ]
-        credit = "Zdjęcie Kartuz: Tomasz Drążkowski."
+        credit = ""
     else:
         rows = [
-            ("en/lab-kartuzy.html", "img/labs/kartuzy.jpg", "center bottom", "cover", "Poland", "Kartuzy",
+            ("en/lab-kartuzy.html", "img/labs/kartuzy-bg.jpg", "center 22%", "cover", "Poland", "Kartuzy",
              "Renovation of the existing fabric, blue-green infrastructure, cost and environmental effects.",
-             "The collegiate church and lake in Kartuzy"),
+             "The team at a meeting"),
             ("en/lab-lund.html", "img/labs/lund.jpg", "center bottom", "cover", "Sweden", "Lund",
              "Densification combined with energy generation and zero-emission solutions.",
              "A view of Lund"),
@@ -421,15 +421,16 @@ def lab_cards(pl, depth):
              "Densification scenarios and their effect on noise, air and daylight.",
              "A street in Innsbruck"),
         ]
-        credit = "Kartuzy photo: Tomasz Drążkowski."
+        credit = ""
     bits = []
     for href, img, pos, fit, place, title, text, alt in rows:
         bits.append(
-            f'<a class="card card-city" href="{link(href, depth)}" style="--city:url(\'../{img}?v=4\');--pos:{pos};--fit:{fit}">'
+            f'<a class="card card-city" href="{link(href, depth)}" style="--city:url(\'../{img}?v=5\');--pos:{pos};--fit:{fit}">'
             f'<span class="shade"><p class="place">{place}</p><h3>{title}</h3><p>{text}</p></span>'
             f'<span class="sr">{alt}</span></a>'
         )
-    return f'<div class="cards cards-labs">{"".join(bits)}</div><p class="photo-credit">{credit}</p>'
+    note = f'<p class="photo-credit">{credit}</p>' if credit else ""
+    return f'<div class="cards cards-labs">{"".join(bits)}</div>{note}'
 
 
 def labs_body(pl, d):
