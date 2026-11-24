@@ -1427,13 +1427,11 @@ def real_article(key, pl, depth):
             return f'''
 <p class="kicker">27–30.09.2026 · Lund</p>
 <p class="lead">27–30 września 2026 r. partnerzy projektu LIGHT spotkali się w Lund.</p>
-<p>W programie były sesje robocze. Jedna z nich dotyczyła narzędzi DALEC. Partnerzy wyszli też w teren: odbył się lot dronem, rozmowa na dziedzińcu i spacer po mieście, między innymi przy przystanku Lund C.</p>
 {gallery}
 '''
         return f'''
 <p class="kicker">27–30.09.2026 · Lund</p>
 <p class="lead">On 27–30 September 2026 the LIGHT partners met in Lund.</p>
-<p>The programme included working sessions. One of them presented the DALEC tools. The partners also went out into the city: there was a drone flight, a conversation in a courtyard and a walk, including the Lund C stop.</p>
 {gallery}
 '''
     if key == "martigny":
