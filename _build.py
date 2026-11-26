@@ -1417,6 +1417,10 @@ def source_line(pl, href, title):
     return f'<p class="source">{label}: <a href="{href}" target="_blank" rel="noopener">{title}</a>, Wydział Architektury PG.</p>' if pl else f'<p class="source">{label}: <a href="{href}" target="_blank" rel="noopener">{title}</a>, Faculty of Architecture, Gdańsk Tech.</p>'
 
 
+def author_line(pl):
+    return '<p class="source">Autorka tekstu: Patrycja Suszko.</p>' if pl else '<p class="source">Author: Patrycja Suszko.</p>'
+
+
 def real_article(key, pl, depth):
     if key == "lund":
         shots = []
@@ -1448,6 +1452,7 @@ def real_article(key, pl, depth):
 <p>Projekt LIGHT jest realizowany w latach 2026–2028 przez międzynarodowe konsorcjum partnerów z Polski, Szwecji, Austrii i Szwajcarii. Liderem projektu jest Politechnika Gdańska.</p>
 <p>Projekt LIGHT – Poszukiwanie zintegrowanych rozwiązań dla zdrowych pozytywnych energetycznie dzielnic, realizowany w ramach Partnerstwa Driving Urban Transitions (DUT), współfinansowany przez Unię Europejską. Projekt uzyskał dofinansowanie od Narodowego Centrum Badań i Rozwoju (NCBR) w ramach konkursu DUT Call 2024.</p>
 {source_line(True, SRC_MARTIGNY, "Drony i fotogrametria – cyfrowy model 3D miasta Martigny")}
+{author_line(True)}
 '''
         return f'''
 <p class="kicker">17.08.2026 · Fieldwork</p>
@@ -1459,6 +1464,7 @@ def real_article(key, pl, depth):
 <p>LIGHT runs from 2026 to 2028. An international consortium from Poland, Sweden, Austria and Switzerland carries it out, led by Gdańsk Tech.</p>
 <p>LIGHT – Seeking integrated solutions for healthy Positive Energy Districts is carried out in the Driving Urban Transitions (DUT) partnership, co-funded by the European Union. The project received funding from the National Centre for Research and Development (NCBR) under DUT Call 2024.</p>
 {source_line(False, SRC_MARTIGNY, "Drones and photogrammetry: a 3D model of Martigny")}
+{author_line(False)}
 '''
     img = asset("img/news/inauguracja.jpg", depth)
     if pl:
@@ -1482,6 +1488,7 @@ def real_article(key, pl, depth):
 <p>Projekt realizowany w ramach Partnerstwa Driving Urban Transitions (DUT) współfinansowanego przez Unię Europejską. Projekt uzyskał dofinansowanie od Narodowego Centrum Badań i Rozwoju (NCBR) w ramach konkursu DUT Call 2024.</p>
 <p>Wartość projektu (całkowita): 5&nbsp;399&nbsp;394,98&nbsp;PLN / 1&nbsp;263&nbsp;016,37&nbsp;EUR. Wartość dofinansowania z NCBR: 2&nbsp;029&nbsp;556,22&nbsp;PLN, decyzja nr DWM/DUT/8/2026. Okres realizacji: 01.01.2026 r. – 31.12.2028 r.</p>
 {source_line(True, SRC_LIGHT, "PG inauguruje międzynarodowy projekt LIGHT")}
+{author_line(True)}
 '''
     return f'''
 <p class="kicker">10.02.2026 · Meetings</p>
@@ -1503,6 +1510,7 @@ def real_article(key, pl, depth):
 <p>The project is carried out within the Driving Urban Transitions (DUT) partnership, co-funded by the European Union. It received funding from the National Centre for Research and Development (NCBR) under DUT Call 2024.</p>
 <p>Total project value: PLN 5,399,394.98 / EUR 1,263,016.37. NCBR funding: PLN 2,029,556.22, decision no. DWM/DUT/8/2026. Duration: 1 January 2026 – 31 December 2028.</p>
 {source_line(False, SRC_LIGHT, "Gdańsk Tech launches the international LIGHT project")}
+{author_line(False)}
 '''
 
 
